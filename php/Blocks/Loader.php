@@ -270,6 +270,7 @@ class Loader extends ComponentAbstract {
 
 		// Default Editor attributes (applied to all blocks).
 		$attributes['className'] = [ 'type' => 'string' ];
+		$attributes['__internalWidgetId'] = [ 'type' => 'string' ];
 
 		foreach ( $block->fields as $field_name => $field ) {
 			$attributes = $this->get_attributes_from_field( $attributes, $field_name, $field );
